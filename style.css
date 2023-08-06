@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background: var(--light-gray);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  align-items: center;
+  box-shadow: 0 10px 40px var(--grayish-blue);
+  border-radius: 6px;
+  padding: 5px;
+  gap: 20px;
+  text-align: center;
+}
+
+section img {
+  width: 375px;
+  height: 375px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+section .title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  word-spacing: 2px;
+  padding: 15px;
+}
+
+section .description {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  section {
+    width: 375px;
+  }
+  section img {
+    width: 350px;
+  }
+}
